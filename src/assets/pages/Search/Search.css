@@ -1,0 +1,81 @@
+.title-search {
+  color      : var(--color-white);
+  font-weight: 500;
+  padding    : 0 20px 40px;
+}
+
+.search-container {
+  display        : flex;
+  justify-content: space-between;
+  border         : 1px solid var(--border-color);
+  background     : var(--background-color-primary);
+  padding        : 20px;
+  border-radius  : 12px;
+}
+
+.search-container .item {
+  width       : 100%;
+  margin-right: 30px;
+}
+
+.search-container .item h4 {
+  font-weight: 500;
+  color      : var(--color-white);
+  font-size  : 16px;
+  margin     : 0 0 20px;
+}
+
+.search-container .item table {
+  width          : 100%;
+  border-collapse: separate;
+  border-spacing : 0 12px;
+}
+
+.search-container thead th {
+  text-align    : start;
+  padding-bottom: 10px;
+  border-bottom : 1px solid var(--border-color);
+}
+
+.search-container tbody tr td.name-column,
+.search-container thead tr th.name-column {
+  max-width    : 100px;
+  overflow     : hidden;
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+
+.search-container tbody tr td {
+  padding  : 8px 0;
+  font-size: 13px;
+  color    : var(--text-secondary);
+}
+
+.search-container tbody tr:hover {
+  background: var(--background-color-secondary);
+  cursor    : pointer;
+  transition: 0.3s all ease;
+}
+
+.search-container tbody tr td:first-child {
+  border-radius: 12px 0 0 12px;
+  padding-left : 5px;
+}
+
+.search-container tbody tr td:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.search-container tbody tr td img {
+  width         : 32px;
+  height        : 32px;
+  object-fit    : cover;
+  border-radius : 12px;
+  vertical-align: middle;
+  margin-right  : 8px;
+}
+
+.search-container tbody tr td.name-column span {
+  margin-left: 5px;
+}

@@ -1,0 +1,98 @@
+.tabs {
+  background   : var(--background-color-primary);
+  padding      : 20px;
+  border-radius: 12px;
+  border       : 1px solid var(--border-color);
+  margin       : 20px 0;
+}
+
+.tabs .tabs-list {
+  background     : var(--background-color-secondary);
+  width          : 30%;
+  border-radius  : 12px;
+  overflow       : hidden;
+  display        : flex;
+  justify-content: space-between;
+}
+
+.tabs .tab-content {
+  padding        : 10px;
+  background     : var(--background-color-secondary);
+  color          : var(--text-secondary);
+  font-size      : 14px;
+  cursor         : pointer;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  transition     : 0.3s all ease;
+}
+
+.tab-active {
+  color: var(--color-white) !important;
+}
+
+.tabs .tab-content:hover {
+  color: var(--color-white);
+}
+
+.tabs .tab-content span {
+  margin-left: 5px;
+}
+
+.tabs .tab-show {
+  padding-top: 40px;
+}
+
+.tabs .tab-show table {
+  width          : 100%;
+  border-collapse: separate;
+  border-spacing : 0 12px;
+}
+
+.tabs .tab-show thead th {
+  padding-bottom: 10px;
+  text-align    : start;
+  border-bottom : 1px solid var(--border-color);
+}
+
+.tabs .tab-show tbody tr:hover {
+  background: var(--background-color-secondary);
+  cursor    : pointer;
+  transition: 0.3s all ease;
+}
+
+.tabs .tab-show tbody tr td {
+  padding  : 10px 0;
+  font-size: 13px;
+  color    : var(--text-secondary);
+}
+
+.tabs .tab-show tbody tr td:first-child {
+  border-radius: 12px 0 0 12px;
+  padding-left : 5px;
+}
+
+.tabs .tab-show tbody tr td:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.tabs .tab-show tbody tr td img {
+  width         : 32px;
+  height        : 32px;
+  object-fit    : cover;
+  vertical-align: middle;
+  margin-right  : 8px;
+  border-radius : 12px;
+}
+
+.tabs .tab-show tbody tr td.name-column {
+  max-width    : 100px;
+  white-space  : nowrap;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+
+.tabs .tab-show tbody tr td.name-column span {
+  margin-left: 5px;
+}
