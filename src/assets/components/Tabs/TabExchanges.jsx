@@ -27,7 +27,6 @@ function TabExchanges() {
       setIsLoading(true);
     }
   }, []);
-
   return (
     <>
       {isLoading ?
@@ -56,7 +55,7 @@ function TabExchanges() {
                 </td>
                 <td>{item.trust_score}</td>
                 <td>{item.trade_volume_24h_btc.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 })} BTC</td>
-                <td>{item.trade_volume_24h_btc_normalized.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 })} BTC</td>
+                <td>{item.trade_volume_24h_btc_normalized ? `${item.trade_volume_24h_btc_normalized.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 })}BTC` : "N/A"} </td>
                 <td className="name-column">{item.country || 'N/A'}</td>
                 <td className="name-column">{item.url}</td>
                 <td>{item.year_established || 'N/A'}</td>
