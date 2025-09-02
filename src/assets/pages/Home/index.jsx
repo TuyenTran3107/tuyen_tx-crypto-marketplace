@@ -4,10 +4,10 @@ import { getData } from "../../utils/request";
 import TrendingCoins from "../../components/Trending/TrendingCoins";
 import TrendingNFTs from "../../components/Trending/TrendingNFTs";
 import { RiApps2Line, RiArrowLeftRightLine, RiBtcLine, RiExchange2Line } from "@remixicon/react";
-import TabAssets from "../../components/Tabs/tabAssets";
-import TabCategories from "../../components/Tabs/tabCategories";
-import TabExchanges from "../../components/Tabs/tabExchanges";
-import TabHolders from "../../components/Tabs/tabHolders";
+import TabAssets from "../../components/Tabs/TabAssets";
+import TabExchanges from "../../components/Tabs/TabExchanges";
+import TabCategories from "../../components/Tabs/TabCategories";
+import TabHolders from "../../components/Tabs/TabHolders";
 import "../../components/Trending/Trending.css";
 import "../../components/Tabs/Tabs.css";
 function Home() {
